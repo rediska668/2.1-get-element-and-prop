@@ -19,7 +19,16 @@
     -->
 
     <script>
-        
+        'use strict';
+
+        let block = document.querySelectorAll('b');
+
+        block.forEach(function(elem){
+            if(elem.classList.contains('sign')){
+                console.log('класс присутствует');
+            }else
+            elem.classList.add('sign');
+        });
     </script>
 </body>
 </html>
