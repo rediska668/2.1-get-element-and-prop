@@ -29,7 +29,9 @@
         let block = document.querySelectorAll('div.card');
 
         block.forEach(function(elem){
-            elem.classList.remove('hidden');
+            if(elem.classList.contains('hidden')){
+                elem.classList.remove('hidden');
+            }
         });
 
        console.log(block.classList);
